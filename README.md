@@ -1,6 +1,6 @@
 David JAMROZ
 
-Chargé Administrateur Réseaux — Arras, France**   
+Chargé Administrateur Réseaux — Arras, France   
 Bachelor Informatique (IPSSI Lille)
 
 
