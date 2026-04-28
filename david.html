@@ -1,1 +1,142 @@
 
+
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap');
+  .term-wrap {
+    background: #0d1117;
+    border-radius: 10px;
+    overflow: hidden;
+    font-family: 'JetBrains Mono', 'Courier New', monospace;
+    font-size: 13px;
+    line-height: 1.5;
+    color: #c9d1d9;
+    max-width: 860px;
+    margin: 0 auto;
+  }
+  .titlebar {
+    background: #21262d;
+    padding: 10px 16px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    border-bottom: 1px solid #30363d;
+  }
+  .dot { width: 12px; height: 12px; border-radius: 50%; }
+  .d-red { background: #ff5f56; }
+  .d-yellow { background: #ffbd2e; }
+  .d-green { background: #27c93f; }
+  .titlebar-text { margin-left: 8px; color: #8b949e; font-size: 12px; }
+  .content { display: flex; gap: 0; padding: 20px; align-items: flex-start; }
+  .ascii-panel {
+    width: 290px;
+    flex-shrink: 0;
+    line-height: 1.15;
+    font-size: 6px;
+    letter-spacing: 0.3px;
+    color: #c0392b;
+    overflow: hidden;
+    user-select: none;
+    white-space: pre;
+  }
+  .info-panel { flex: 1; padding-left: 24px; border-left: 1px solid #21262d; }
+  .username { color: #ff6b6b; font-size: 15px; font-weight: 700; margin-bottom: 4px; }
+  .at-github { color: #8b949e; font-size: 13px; }
+  .divider { border: none; border-top: 1px solid #21262d; margin: 10px 0; }
+  .info-row { display: flex; margin: 5px 0; }
+  .info-key { color: #58a6ff; min-width: 100px; flex-shrink: 0; font-size: 12px; }
+  .info-val { color: #e6edf3; font-size: 12px; }
+  .section-title { color: #3fb950; margin-top: 14px; margin-bottom: 6px; font-size: 12px; }
+  .lang-row { display: flex; margin: 4px 0; }
+  .lang-key { color: #d2a8ff; min-width: 160px; flex-shrink: 0; font-size: 11px; }
+  .lang-val { color: #e6edf3; font-size: 11px; }
+</style>
+
+<div class="term-wrap">
+  <div class="titlebar">
+    <div class="dot d-red"></div>
+    <div class="dot d-yellow"></div>
+    <div class="dot d-green"></div>
+    <span class="titlebar-text">davidjamroz@github — zsh</span>
+  </div>
+  <div class="content">
+    <div class="ascii-panel" id="ascii"></div>
+    <div class="info-panel">
+      <div class="username">David JAMROZ <span class="at-github">@github</span></div>
+      <hr class="divider">
+      <div class="info-row">
+        <span class="info-key">Role: .............</span>
+        <span class="info-val">Chargé Admin Réseaux</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Location: ........</span>
+        <span class="info-val">Arras, France</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">License: .........</span>
+        <span class="info-val">Permis B, véhiculé</span>
+      </div>
+      <div class="info-row">
+        <span class="info-key">Formation: .......</span>
+        <span class="info-val">Bachelor Info — IPSSI Lille</span>
+      </div>
+      <hr class="divider">
+      <div class="section-title">— Languages & Stack</div>
+      <div class="lang-row">
+        <span class="lang-key">Languages.Dev: ...........</span>
+        <span class="lang-val">Python, PHP, HTML, CSS, JS</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Languages.DB: ............</span>
+        <span class="lang-val">MySQL</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Languages.Script: ........</span>
+        <span class="lang-val">Bash</span>
+      </div>
+      <hr class="divider">
+      <div class="section-title">— Infra & Sécurité</div>
+      <div class="lang-row">
+        <span class="lang-key">OS: ......................</span>
+        <span class="lang-val">Ubuntu, Debian, WinSrv 2016</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Virtualisation: ..........</span>
+        <span class="lang-val">VMware, VirtualBox, ESXI, Proxmox</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Security: ...............</span>
+        <span class="lang-val">UFW, Fail2Ban, OWASP, Nmap</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Container: ...............</span>
+        <span class="lang-val">Docker</span>
+      </div>
+      <hr class="divider">
+      <div class="section-title">— Certifications</div>
+      <div class="lang-row">
+        <span class="lang-key">Certif.Linux: ............</span>
+        <span class="lang-val">Formation Linux</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Certif.Data: .............</span>
+        <span class="lang-val">CNIL — RGPD</span>
+      </div>
+      <div class="lang-row">
+        <span class="lang-key">Certif.Secu: .............</span>
+        <span class="lang-val">ANSSI — Sécurité SI</span>
+      </div>
+      <hr class="divider">
+      <div class="section-title">— Stage recherché</div>
+      <div class="lang-row">
+        <span class="lang-key">Stage: ...................</span>
+        <span class="lang-val" style="color:#f0883e;">8 semaines · 18 Mai → 10 Juillet 2026</span>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+const ascii = "......                                              ..................\n......                                              ..................\n......                                              ..................\n.                                                                .....\n..                                                               .....\n.                                                                 ....\n                                                                      \n                                                                      \n                                                                      \n                                                                      \n                                                                      \n                                                                      \n                               ........                               \n                                                                      \n                              .,,:,:,,,.                              \n                            ..:%######%:..                            \n                           . :*?####S#?*: .                           \n                         ...+%%%SSSSSS%%%*...                         \n                         . ,?@@@@@@@@@@@@#; .                         \n                         .,;*%SSSSSSSSSS%%?, ..                       \n                        . +###############@%,..                       \n                        . ;S###############%,..                       \n                       . ,%SSS?+*+++**?SSSSS+...                      \n                       . ,#@@@S*******%#@@@@?...                      \n                       . ,%S%?+;;::;;;*??%SS*...                      \n                       . ,#@#+,:,:,,,;*+*S@@S,.                       \n                       . ,S#S+,,,,,,,;+++%S#%..                       \n                         .+S+,,,,,,,:++*++*#*..                       \n                         .+#*,:,,,,,:*****?@?..                       \n                         .,*+;;;;;;;;++++++*:..                       \n                         ..+***????*?**??*?+,,.                       \n                         ..+++++++++++++*+*;,,.                       \n                         ..,,:,;+:;:*+++**+,,...                      \n                         ..,:::;*;+;******+:,...                      \n                          ..,,,,:;::+;:::;+:....                      \n                          ..::,,:+::*+,::+?;,...                      \n                          ..,,,,,;::+;,::;+:....                      \n                          ...,:,,+*******+,,...                       \n                          ...::,,+****++++:,...                       \n                           ...,,;+:+++++++,,...                       \n                           ..,::+*;*******:,..                        \n                           ...,,:;:;;++++;,,...                       \n                           ...;+,::,:***?+,,...                       \n                           ..:?;,:,,:+++*;.,...                       \n                          ...;?++++++++++*;....                       \n                        .  .,*S**********?*:....                      \n                         ..:,;*;;;++++++++;,:,. ..                    \n                    .  .,::*:;*;,+********:;?+:,.. .                  \n                      .,:,,+::*;,;+++*+++*::+;::...                   \n                   .,,,,,,::,:**:,:+++++++:,:,;:,,,.                  \n                . .,;::::::::;;;+,:+******::::+;::::,.                \n               . .,,,,,,,,,,,:,.,;;;+;;+*;,:;;:,,,,,,..               \n               ..,:,:::::::,:::,.+***+;*+::;*?;::::::::. .            \n              ..,,,,,,,,,,,,,::,. ;++::+.,::++:,,,,,,,:,..            \n              .,,,,,:,:::::,:*+*:.....  +*+::,::::::::::,.            \n              .,,,,::::::::::***;......,+**:::::::::::::, .           \n             ..,,,,,,,,,,,,,,:::;;....:;:::,,,,,,,,,,,,,,...          \n             .,,,,,:::,::::::::,+?;...;?;::::::::::::::::, .          \n             .,,,,,,,,,,,,,,,,,,;+:,..:+:,,,,,,,,,,,,,,,,,..          \n             .,,,,:,:::,,::::,:::,:+.:::::::::::::::::::::, .         \n             .,,,,:,:::,,::::,:::::+.:::::::::::::::::::::.           \n            .,,,,,,,,,,,,,,,,,,,,,,:+;,,,,,,,,,,,,,,,,,,,,,..         \n            .,,::,,:,:::,:::::::::::?+::::::::::::::::::::,..         \n            .,,,,,,,,,,,,,,,,,,,,,,:+:,,,,,,,,,,,,,,,,:,,,,...        \n            .,,,,,:::,::,,:::::::::;+:::::::::::::::::+;:::,..        \n           ..,,,,,,::,::,,,::::,:,,:+:::,,,,,::,::::::+:,:,...        \n            .,,,,,,,;,,,,,,,,,,,,,,,:,,,,,,,,,,,,,,,;+:,,,,,...       \n            ,,,,,,,:+::::,::::::::,:::::::::::::::::+?;::::,...       \n            ,,,,,,,,;,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;,,,,,,...       \n            ,,,,,:::+:,:,:::::::::,:::::::::::::::::+;:::::,....      \n            ,,,,,,,:+,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;,:,,:,....      \n            ,,,,,,,:++,,,,,,,,,,,,,,,,,,,,,,,,,,,:,;*;,,,,:,....      \n            ,,,,,:::**,,::::::::::,:::::,::::::::::;*;:::::,....      \n            ,,,,,,,,++,,,,,,,,,,,,,,,,,,,,,,,,,,,,,:;,,,,,,,....      \n            ,,,,::::**:,,:,::::::::,:::::::::::::::++:::::::,...      \n           .,,,,,,,,++,,,,,,,,,,,,,,,,,,,,,,,,,,,,,;;,,,,,,,....      \n           .,,,,,:,:+*:,,,,::::::,,,:,::,:::,:::::,;*;,::::,....      \n           .,,,,,:::**:,,,,:::::::::::::::::::::::,;*;:::::,....      \n           .,,,,,,,,++,,,,,,,,,,,,,,,,,,,,,,,,,,,,:*+:,,,,,,.....     \n         . ,,,,,::::**:,,,,:::::::::::::::::::::::+S*;::::::,....     \n           .,,,,,,,,++,,,,,,,,,,,,,,,,,,,,,,,,,,,,;?+:,,,,,,.....     \n           ,,,,,::::+*:,,,,,:::::::,::::::::::::::;**;:::::,,....     \n         . ,,,,,::::+*:,,,,,:::::::,::::::::::::::;**;:::::,.....     \n           .,,,,,,,;++,,,,,,,,,,,,,,,,,,,,,,,,,,,:+*+:,,,,,,,....     \n         . ,,,:::::+**:,,,,,:::::::::::::::::::::;*?*;::::::,....     \n           .,,,,,,,;++,,,,,,,,,,,,,,,,,,,,,,,,,,,:;++;,,,,,,,....     \n           ,,,:::::+*+::,,,,:::::::::::::::::::::+;***;:::::,....     \n         . ,,,:::::+?*::,,,,:::::::::::::::::::::+;***;:::::,....     ";
+
+document.getElementById('ascii').textContent = ascii;
+</script>
